@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 // 추상 메서드 : 이름만 있는 메서드
 //               상속받은 자식이 무조건 오버라이딩되야함.
 
-public class ServletEx1 extends HttpsServlet{
+public class ServletEx1 extends HttpServlet{
   
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
