@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSP 프로젝트</title>
+</head>
+<body>
+    <h3>JSP 테스트 1</h3>
+
+    <!-- 로그인
+        user01 / pass01! 로 로그인 시 성공
+    -->
+            <!-- /프로젝트명/요청주소 -->
+    <form action="/JSPProject/login" method="POST">
+                                        <!-- 데이터 전달 방식(GET/POST) -->
+        ID : <input type="text" name="inputId"> <br>
+        PW : <input type="password" name="inputPw"> <br>
+        <button>로그인</button>
+    </form>
+
+    <hr>
+
+    <h3>JSP 테스트 2</h3>
+
+    <form action="/JSPProject/pizzaOrder" method="post">
+        피자 선택(1만원) : 
+        <select name="pizza">
+            <option>치즈 피자</option>
+            <option>고구마 피자</option>
+            <option>콤비네이션 피자</option>
+            <option>쉬림프 피자</option>
+            <option>하와이안 피자</option>
+        </select>
+
+        <br><br>
+
+        사이즈 :
+        <br>
+
+        <label>
+            R <input type="radio" name="size" value="R">
+        </label>
+
+        <br>
+
+        <label>
+            L(+2,000) <input type="radio" name="size" value="L">
+        </label>
+
+        <br><br>
+
+        수량 : <input type="number" name="amount" min="1" max="10" value="1">
+
+        <br><br>
+
+        <button>주문하기</button>
+    </form>
+
+
+</body>
+</html>
