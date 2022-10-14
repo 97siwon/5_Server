@@ -32,5 +32,25 @@ public class StudentService {
 		// 결과 반환
 		return stdList;
 	}
+
+
+
+	/** 학과 검색 서비스
+	 * @param inputDept
+	 * @return departmentName
+	 * @throws Exception
+	 */
+	public List<Student> selectDepartment(String inputDept) throws Exception {
+		
+		Connection conn = getConnection();
+		
+		List<Student> deptList = dao.selectDepartment(conn, inputDept);
+		
+		close(conn);
+		
+		return  deptList;
+	}
+
+
 	
 }
