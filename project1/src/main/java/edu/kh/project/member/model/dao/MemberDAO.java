@@ -68,7 +68,7 @@ public class MemberDAO {
 				
 				
 				loginMember = new Member(rs.getInt("MEMBER_NO"),
-						                 "MEMBER_EMAIL",
+						                rs.getString("MEMBER_EMAIL"),
 						                 rs.getString("MEMBER_NICKNAME"),
 						                 rs.getString("MEMBER_TEL"),
 						                 rs.getString("MEMBER_ADDRESS"),
