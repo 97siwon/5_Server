@@ -56,14 +56,14 @@ public class MemberDAO {
 			if(rs.next()) {
 				loginMember = new Member();
 				
-				loginMember.setMemberNo(rs.getInt("MEMBER_NO"));
-				loginMember.setMemberEmail(rs.getString("MEMBER_EMAIL"));
-				loginMember.setMemberNickname(rs.getString("MEMBER_NICKNAME"));
-				loginMember.setMemberTel(rs.getString("MEMBER_TEL"));
-				loginMember.setMemberAddress(rs.getString("MEMBER_ADDRESS"));
-				loginMember.setProfileImage(rs.getString("PROFILE_IMG"));
-				loginMember.setAuthority(rs.getInt("AUTHORITY"));
-				loginMember.setEnrollDate(rs.getString("ENROLL_DATE"));
+				loginMember.setMemberNo(       rs.getInt("MEMBER_NO")  );
+				loginMember.setMemberEmail(    rs.getString("MEMBER_EMAIL")  );
+				loginMember.setMemberNickname( rs.getString("MEMBER_NICKNAME")  );
+				loginMember.setMemberTel(      rs.getString("MEMBER_TEL")  );
+				loginMember.setMemberAddress(  rs.getString("MEMBER_ADDRESS")  );
+				loginMember.setProfileImage(   rs.getString("PROFILE_IMG")  );
+				loginMember.setAuthority(      rs.getInt("AUTHORITY")  );
+				loginMember.setEnrollDate(     rs.getString("ENROLL_DATE")  );
 			
 				
 				

@@ -47,7 +47,9 @@
 		--%>
 
         <section class="content">
-            <section class="content-1"></section>
+            <section class="content-1">
+                ${loginMember}
+            </section>
 
             <section class="content-2">
 
