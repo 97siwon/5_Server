@@ -4,7 +4,7 @@
  <header>
             <section>
                 <!-- 클릭 시 메인페이지로 이동하는 로고 -->
-                <a href="#">
+                <a href="/">
                     <img src="/resources/images/logo.jpg" id="home-logo">
                 </a>
             </section>
@@ -53,7 +53,7 @@
                         <input type="checkbox" id="header-menu-toggle">
 
                         <div id="header-menu">
-                            <a href="#">내정보</a>
+                            <a href="/member/myPage/info">내정보</a>
                             <a href="/member/logout">로그아웃</a>
                         </div>
 

@@ -103,7 +103,7 @@
                         </form>
                     </c:when>
 
-                    <%-- 로그인이 0인 경우 --%>
+                    <%-- 로그인이 O인 경우 --%>
                     <c:otherwise>
                         <article class="login-area">
                         
@@ -116,7 +116,7 @@
                         <div class="my-info">
 
                             <div>
-                                <a href="#" id="nickname">${loginMember.memberNickname}</a>
+                                <a href="/member/myPage/info" id="nickname">${loginMember.memberNickname}</a>
                                 <a href="/member/logout" id="logout-btn">로그아웃</a>
                             </div>
 
