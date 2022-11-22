@@ -554,8 +554,8 @@ AND BOARD_DEL_FL = 'N';
 
 
 
-SELECT * FROM BOARD_LIKE
-WHERE BOARD_NO = 1976;
+SELECT * FROM BOARD
+WHERE BOARD_NO = 1973;
 
 
 SELECT * FROM "MEMBER";
@@ -566,6 +566,12 @@ WHERE MEMBER_NO = 22;
 ROLLBACK;
 
 
+-- 게시글 삽입
+INSERT INTO BOARD
+VALUES(SEQ_BOARD_NO.NEXTVAL,
+       #{boardTitle}, #{boardContent},
+       DEFAULT, DEFAULT, DEFAULT, DEFAULT, 
+       #{memberNo}, #{boardCode} );
 
 
 
