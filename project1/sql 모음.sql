@@ -586,7 +586,21 @@ WHERE BOARD_NO = #{boardNo}
 
 
 
-
+-- 검색 조건이 일치하는 게시글 수 조회(삭제 제외)
+SELECT COUNT(*) 
+FROM BOARD
+JOIN MEMBER USING(MEMBER_NO)
+WHERE BOARD_CODE = 1
+AND BOARD_DEL_FL = 'N'
+-- 제목 검색
+-- AND BOARD_TITLE LIKE '%10%'
+-- 내용 검색
+-- AND BOARD_CONTENT LIKE '%10%'
+-- 제목 + 내용 검색
+-- AND( BOARD_TITLE LIKE '%10%'
+-- OR BOARD_CONTENT LIKE '%10%')
+-- 작성자 닉네임
+AND MEMBER_NICKNAME LIKE '%유저%' 
 
 
 
